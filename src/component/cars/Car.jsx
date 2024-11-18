@@ -39,7 +39,7 @@ const CarDisplay = () => {
 
   return (
     <div className="car-display-container">
-      <h1>Wilx Garage</h1>
+      <h1>Wilxs Garage</h1>
       <div className="car-buttons">
         {cars.map((car, index) => (
           <button
