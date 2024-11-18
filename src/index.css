@@ -1,0 +1,60 @@
+*{
+    background-color: lightblue;
+}
+
+* {
+    background-color: lightblue;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Example of a responsive container */
+.container {
+    width: 90%; /* Use a percentage for width */
+    max-width: 1200px; /* Set a maximum width */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add some padding */
+}
+
+/* Responsive text */
+h1 {
+    font-size: 2.5rem; /* Use rem for scalable text */
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Smaller font size on smaller screens */
+    }
+
+    p {
+        font-size: 0.9rem; /* Slightly smaller text */
+    }
+
+    .container {
+        padding: 10px; /* Less padding on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* Even smaller font size */
+    }
+
+    p {
+        font-size: 0.8rem; /* Reduce text size further */
+    }
+
+    .container {
+        width: 95%; /* Use more width on very small screens */
+    }
+}
+

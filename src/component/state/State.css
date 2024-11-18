@@ -1,0 +1,35 @@
+h1 {
+    font-size: 3em; 
+    color: #333; 
+    text-align: center;
+    padding: 20px; 
+    background: linear-gradient(90deg, #ff7e5f, #feb47b); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s;
+}
+h1:hover {
+    transform: scale(1.05); 
+}
+
+.btn {
+    display: inline-block; 
+    text-align: center;  
+    padding: 10px 20px;   
+    font-size: 16px;     
+    background-color: bisque;
+    color: black
+    border: none;   
+    border-radius: 5px;  
+    cursor: pointer;     
+}
+
+.btn:hover {
+    background-color: brown;
+}
+
+.flex{
+    justify-items: center;
+}

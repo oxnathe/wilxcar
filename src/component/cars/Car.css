@@ -1,0 +1,146 @@
+.car-display-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.car-buttons {
+  margin-bottom: 20px;
+}
+
+.car-button {
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.car-button:hover {
+  background-color: #ddd;
+}
+
+.car-button.active {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.car-info {
+  margin-top: 20px;
+}
+
+.car-image {
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.car-image.fade-out {
+  opacity: 0;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-top: 2px solid #dee2e6;
+  }
+  
+  .footer-text {
+    font-size: 14px;
+    color: #6c757d;
+    margin: 0;
+  }
+  
+  .footer-text span {
+    font-weight: bold;
+  }
+i  
+
+.made-with {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #333;
+    text-align: center; /* Center aligns the text for all screen sizes */
+    margin: 20px 0;
+  }
+
+  @media (min-width: 768px) {
+    .made-with {
+      text-align: right; /* Aligns to the right on medium and larger screens */
+    }
+  }
+
+  .heart-icon {
+    animation: pulse 1.5s infinite;
+    vertical-align: middle;
+  }
+
+  .author-link {
+    font-weight: 600;
+    color: #FFB30E;
+    text-decoration: none;
+  }
+
+  .author-link:hover {
+    color: #FF8800;
+    text-decoration: underline;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+
+* Media Queries for Responsiveness */ @media (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .car-button {
+    font-size: 0.8em;
+    padding: 8px 16px;
+  }
+
+  .car-image {
+    max-width: 300px; /* Smaller max width for mobile */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .car-button {
+    font-size: 0.9em;
+    padding: 9px 18px;
+  }
+
+  .car-image {
+    max-width: 400px; /* Medium size for tablets */
+  }
+}
+
+@media (min-width: 901px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .car-button {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+
+  .car-image {
+    max-width: 500px; /* Default max width for larger screens */
+  }
+}
